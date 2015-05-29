@@ -9,13 +9,13 @@ First things first - you need access to sql.
 ..* Open MySQL Workbench
 ..* The first window you see is the connection window. Click the plus symbol next to ‘MySQL Connections’ in the upper lift.
 ..* You can use these credentials to access the database:
-‘’’
+'''
 connection name: datasci
 hostname: 104.236.178.198
 port: 3305
 username: datasci
 password: sql
-‘’’
+'''
 
 3. Test the connection
 ..* You should now be in the main interface. In the center is the query editor. Here is where you will be writing your SQL statements. 
