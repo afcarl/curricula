@@ -1,7 +1,7 @@
 First things first - you need access to sql.
 
 1. Download MySQL Workbench
-..* Go to http://dev.mysql.com/downloads/workbench/
+* Go to http://dev.mysql.com/downloads/workbench/
 ..* Click on the package for your operating system
 ..* Go through the process of installing SQL Workbench/J
 
