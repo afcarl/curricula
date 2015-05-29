@@ -1,10 +1,12 @@
-## Bike Share
+## Learn SQL
 
-The data in this test comes from Hubway, Boston's bike sharing service that has open-sourced info on their network.Please submit a written answer for each question, as well as the code (sql or python only) used to answer the questions in a separate document (text documents or ipython notebooks are fine).
+Let’s dive into SQL! There are a number of SQL guides out there - this one is meant to get you up and running querying data quickly. It focuses primarily on practical use and less on the underlying philosophies of database design and relational algebra. That said, these topics are important to use SQL effectively and responsibly in a real-world environment and should not be overlooked. 
 
-Write-ups should include both text and visualizations. Writeups should be brief, but not more brief than is necessary to provide a complete explanation. A good writeup will provide a clear takeaway, offer concise support for that takeaway with clear text and visuals, and be of sound logic and thoughtful approach.
 
-_Questions coming soon_
+The data in this guide comes from Hubway, Boston's bike sharing service that has open-sourced info on their network.
+
+If you have issues, questions, or suggestions as you go through this guide, please email jonathan@datascience.com. Thank you!
+
 
 #### Tables
 
