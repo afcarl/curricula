@@ -17,7 +17,7 @@ This code gets us a list of 100 individual bike trips, how long they took, and t
 
 We connect this data by joining the two tables. Let's unpack the statement:
 
-```
+```sql
 SELECT 
     <columns>
 FROM 
