@@ -94,6 +94,8 @@ Types of data include:
 * Booleans (True or False)
 * Dates
 
+Here is a [full list](http://www.w3schools.com/sql/sql_datatypes.asp)
+
 ### Quick explanation of relational databases
 Why do we need to connect tables at all? Relational databases reduce the redundancy of stored data by separating out the data into multiple tables. Then, when we want to connect the data, we just define the columns from each table that match the data up.
 
