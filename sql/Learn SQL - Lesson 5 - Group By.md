@@ -1,6 +1,6 @@
 "Group By" is where SQL gets fun. Like pivot tables in Excel, the group by function allows you to slice up aggregate data by category. Let's dive in. 
 
-Basic Group By
+#  Basic Group By
 What if we want to know how many bike rides were taken by men vs how many rides were taken by women? One way would be to use the WHERE function. We could run the following two queries:
 ```sql
 SELECT 
