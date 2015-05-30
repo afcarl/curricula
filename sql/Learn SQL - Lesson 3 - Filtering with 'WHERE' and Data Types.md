@@ -96,12 +96,4 @@ Types of data include:
 
 Here is a [full list](http://www.w3schools.com/sql/sql_datatypes.asp)
 
-### Quick explanation of relational databases
-Why do we need to connect tables at all? Relational databases reduce the redundancy of stored data by separating out the data into multiple tables. Then, when we want to connect the data, we just define the columns from each table that match the data up.
-
-### A maybe helpful way to think about Joins
-When you think about joins, I think it's helpful to think about SQL building a temporary table from two tables. This is helpful because it's important to understand that SQL will combine these two tables first, and then do other operations such as aggregation (to come later) and filtering (to come later) after it has done the join. 
-
-### Of Inner, Outer, Left, and Right Joins
-Joins are not so simple as always using "join". There are different types of joins, particularly "left joins" and "right joins". We will save them for a later lesson. However, it's important to call out now that using the correct join is critical to using SQL correctly. Until you lean and understand all the joins, you cannot use SQL responsibly. 
 
