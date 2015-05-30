@@ -13,7 +13,7 @@ WHERE
 ```
 What about the average trip duration? We use this query:
 
-```
+```sql
 SELECT 
     AVG(duration)
 FROM
