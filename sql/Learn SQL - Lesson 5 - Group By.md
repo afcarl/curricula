@@ -1,6 +1,6 @@
-"Group By" is where SQL gets fun. Like pivot tables in Excel, the group by function allows you to slice up aggregate data by category. Let's dive in. 
+"Group By" is where SQL gets fun. Like pivot tables in Excel, the GROUP BY function allows you to slice up aggregate data by category. Let's dive in. 
 
-#  Basic Group By
+###  Basic Group By
 What if we want to know how many bike rides were taken by men vs how many rides were taken by women? One way would be to use the WHERE function. We could run the following two queries:
 ```sql
 SELECT 
@@ -28,10 +28,10 @@ FROM
 GROUP BY gender
 ```
 
-Way easier! Plus we also see that there are huge number of 'Unknown's. (We also see that biking may have something of a gender problem...) 
+Way easier! Plus we also see that there are huge number of Unknowns. (We also see that biking may have something of a gender problem...) 
 
-Try it out with other aggregate functions 
-Group by works with all aggregate functions. For example we might want to know the average trip duration by gender:
+### Try it out with other aggregate functions 
+GROUP BY works with all aggregate functions. For example we might want to know the average trip duration by gender:
 
 ```sql
 SELECT 
@@ -50,8 +50,8 @@ FROM
     trips
 GROUP BY gender
 ```
-Multiple Categories
-With group by, we can slice this data up by multiple categories. For example, what if we wanted to know the average trip duration by both gender and zipcode? We could use this query:
+### Multiple Categories
+With GROUP BY, we can slice the data up by multiple categories. For example, what if we wanted to know the average trip duration by both gender and zipcode? We could use this query:
 
 ```sql
 SELECT 
@@ -60,7 +60,7 @@ FROM
     trips
 GROUP BY gender , zip_code
 ```
-Order By
+### Order By
 Often, we want to order our results by a certain column. For example we might want to know the average trip durations by zip code, and order this from lowest durations to highest durations:
 
 ```sql
