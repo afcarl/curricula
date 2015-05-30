@@ -2,10 +2,10 @@
 
 Basic Group By
 What if we want to know how many bike rides were taken by men vs how many rides were taken by women? One way would be to use the WHERE function. We could run the following two queries:
-
-> SELECT gender, COUNT(trip_id) from trips WHERE gender = 'Male'
-> SELECT gender, COUNT(trip_id) from trips WHERE gender = 'Female'
-
+'''
+SELECT gender, COUNT(trip_id) from trips WHERE gender = 'Male'
+SELECT gender, COUNT(trip_id) from trips WHERE gender = 'Female'
+'''
 This is unwieldy, and also requires you to know what categories are in each column. Let's try this instead:
 
 >>>> SELECT gender, COUNT(trip_id) from trips GROUP BY gender
