@@ -20,29 +20,65 @@ WHERE
 ```
 This is unwieldy, and also requires you to know what categories are in each column. Let's try this instead:
 
->>>> SELECT gender, COUNT(trip_id) from trips GROUP BY gender
+```sql
+SELECT 
+    gender, COUNT(trip_id)
+FROM
+    trips
+GROUP BY gender
+```
 
 Way easier! Plus we also see that there are huge number of 'Unknown's. (We also see that biking may have something of a gender problem...) 
 
 Try it out with other aggregate functions 
 Group by works with all aggregate functions. For example we might want to know the average trip duration by gender:
 
->>>> SELECT gender, AVG(duration) from trips GROUP BY gender
+```sql
+SELECT 
+    gender, AVG(duration)
+FROM
+    trips
+GROUP BY gender
+```
 
 Or we might want to know the maximum duration of a trip by gender:
 
->>>> SELECT gender, MAX(duration) from trips GROUP BY gender
-
+```sql
+SELECT 
+    gender, MAX(duration)
+FROM
+    trips
+GROUP BY gender
+```
 Multiple Categories
 With group by, we can slice this data up by multiple categories. For example, what if we wanted to know the average trip duration by both gender and zipcode? We could use this query:
 
->>>> SELECT gender, zip_code, AVG(duration) from trips GROUP BY gender, zip_code
-
+```sql
+SELECT 
+    gender, zip_code, AVG(duration)
+FROM
+    trips
+GROUP BY gender , zip_code
+```
 Order By
 Often, we want to order our results by a certain column. For example we might want to know the average trip durations by zip code, and order this from lowest durations to highest durations:
 
->>>> SELECT zip_code, AVG(duration) from trips GROUP BY zip_code ORDER BY AVG(duration) ASC
+```sql
+SELECT 
+    zip_code, AVG(duration)
+FROM
+    trips
+GROUP BY zip_code
+ORDER BY AVG(duration) ASC
+```
 
 We can also order in a descending fashion:
 
->>>> SELECT zip_code, AVG(duration) from trips GROUP BY zip_code ORDER BY AVG(duration) DESC
+```sql
+SELECT 
+    zip_code, AVG(duration)
+FROM
+    trips
+GROUP BY zip_code
+ORDER BY AVG(duration) DESC
+```
