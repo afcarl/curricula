@@ -10,26 +10,27 @@ First things first - you need access to sql.
 * The first window you see is the connection window. Click the plus symbol next to ‘MySQL Connections’ in the upper lift.
 * You can use these credentials to access the database:
 
-'''
+```
 connection name: datasci
 hostname: 104.236.178.198
 port: 3305
 username: datasci
 password: sql
-'''
+```
 
 3) Test the connection
 * You should now be in the main interface. In the center is the query editor. Here is where you will be writing your SQL statements. 
 * Towards the bottom of the left pane will be a section title “Schemas”. Double-click on bikeshare.
 * enter the below code in the statement box and click the lightning symbol to execute the query:
 
-‘’’sql
+```sql
 SELECT 
     *
 FROM
     stations
 LIMIT 5
-‘’’
+```
+
 * You should get an output that shows five rows of data on subway stations.
 * If you did not get an error, we got over the hardest part of this journey.
 
