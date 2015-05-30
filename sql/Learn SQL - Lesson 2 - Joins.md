@@ -29,7 +29,12 @@ FROM
 We are saying to the database:
 
 ```
-"Give us the 'trip_id' and 'duration' column from the 'trips' table, and the 'municipality' column from the 'stations' table. Connect these table by matching "start_station_id" from 'trips' with the 'station_id' from 'stations'
+GIVE ME
+    the 'trip_id', 'duration', and 'municipality' column 
+FROM 
+    the 'trips' table, 
+        AND 
+    the 'stations' table. Connect these table by matching "start_station_id" from 'trips' with the 'station_id' from 'stations'
 ```
 
 ### Quick explanation of relational databases
