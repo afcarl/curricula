@@ -2,13 +2,18 @@
 In many analysis tasks, it is common to work with dates and times. Knowing how to effectively handle dates in SQL enables aggregation and processing to be performed quickly on the DB rather than manually in your analysis tool of choice. 
 
 ### Overview
-In Redshift, dates can be represented as timestamps or date liteals. Timestamps have time and timezone data, while dates do not. Date fields can be used in selection criteria the same way as numeric fields using equality and inequality operators. When hard-coding a date in a SQL expression, wrap the date in single quotes. 
+In Redshift, dates can be represented as timestamps or dates. Timestamps have time and timezone data, while dates do not. A [date literal](http://docs.aws.amazon.com/redshift/latest/dg/r_Date_and_time_literals.html) is a string representation of a date datatype. Date literals can have varying levels of precision, typically you'll only need date-level precision in most queries (no time data). To encode a date as a date literal in a SQL expression, use the `'YYYY-MM-DD HH:MM:SS'` format.
+
+This query demonstrates usage of a date literal with timestamp and one without in a where clause. Date fields can be used in selection criteria the same way as numeric fields using equality and inequality operators. When hard-coding a date as a date literal in a SQL expression, wrap the date in single quotes.
 
 ```sql
-WHERE date_col >= '2015-01-01'
+SELECT COUNT(*)
+FROM trips
+WHERE start_date >= '2014-01-01 05:00:00'
+AND   start_date <= '2014-01-31';
 ```
 
-Be careful when comparing timestamps to date literals. The query below evaluates to false. The first `GETDATE` call evaluates to a timestamp, while the second one is cast as a date literal. Even through they share the same date, they are not considered equal as the second does not have a time component.
+Be careful when comparing timestamps to dates. The query below evaluates to false. The first `GETDATE` call evaluates to a timestamp, while the second one is cast as a date literal. Even through they share the same date, they are not considered equal as the second does not have a time component.
 
 ```sql
 SELECT GETDATE() = DATE(getdate ())
