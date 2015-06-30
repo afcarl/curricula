@@ -61,7 +61,7 @@ FROM tmp_table_a
 ```
 
 ### Cross Joins
-The result set of a `cross join` is the Cartesian product of all rows in the tables involved. Each row of the table on the left is combined with each row of the table on the right. We do not need the `on` keyword to specify joining fields.
+The result set of a `cross join` is the Cartesian product of all rows in the tables involved. Each row of the table on the left is combined with each row of the table on the right. We do not need the `on` keyword to specify joining fields. T
 
 ```sql
 SELECT *
