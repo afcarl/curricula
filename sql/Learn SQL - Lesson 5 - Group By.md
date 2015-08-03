@@ -8,7 +8,9 @@ SELECT
 FROM
     trips
 WHERE
-    gender = 'Male'
+	gender = 'Male'
+GROUP BY
+	gender
 ```
 ```sql
 SELECT 
@@ -16,7 +18,9 @@ SELECT
 FROM
     trips
 WHERE
-    gender = 'Female'
+	gender = 'Female'
+GROUP BY
+	gender
 ```
 This is unwieldy, and also requires you to know what categories are in each column. Let's try this instead:
 
